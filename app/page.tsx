@@ -2,12 +2,15 @@ import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { MDXComponents } from "mdx/types";
 
+import { Text } from "./component/Text";
+
 const components: MDXComponents = {
   h1: (props) => (
     <h1 {...props} style={{ color: "red" }}>
       {props.children}
     </h1>
   ),
+  Text,
 };
 
 const getData = async () => {

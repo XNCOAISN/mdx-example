@@ -7,6 +7,8 @@ export const GET = async () => {
 # Hello World
 
 This is from Server Components!
+
+<Text text="text" />
     `,
   };
 
